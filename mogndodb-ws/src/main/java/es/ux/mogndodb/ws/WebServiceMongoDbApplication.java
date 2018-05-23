@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Configuration;
 public class WebServiceMongoDbApplication  {
 
 	/**
-	 * The main method.
+	 * The main method. 
 	 *
 	 * @param args the arguments
 	 * @throws Exception the exception
