@@ -11,18 +11,18 @@ import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 
 import es.ux.mogndodb.ws.model.Actividad;
-import es.ux.mogndodb.ws.repository.InterventionRepository;
-import es.ux.mogndodb.ws.service.InterventionService;
+import es.ux.mogndodb.ws.repository.ActivityRepository;
+import es.ux.mogndodb.ws.service.ActivityService;
 
 /**
  * The Class InterventionServiceImpl.
  */
 @Service
-public class InterventionServiceImpl implements InterventionService {
-	static final Logger logger = Logger.getLogger(InterventionServiceImpl.class);
+public class ActivityServiceImpl implements ActivityService {
+	static final Logger logger = Logger.getLogger(ActivityServiceImpl.class);
 
 	@Autowired
-	private InterventionRepository mongodDBRepository;
+	private ActivityRepository mongodDBRepository;
 
 	
 	public List<Actividad> getAllActivities() { 

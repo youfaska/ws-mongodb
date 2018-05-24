@@ -8,7 +8,7 @@ import com.mongodb.DBObject;
  * The Interface InterventionRepository.
  * @author youssef.oufaska
  */
-public interface InterventionRepository {
+public interface ActivityRepository {
 	
 	/**
 	 * Find all interventions.

@@ -9,7 +9,7 @@ import es.ux.mogndodb.ws.model.Actividad;
 /**
  * The Interface InterventionService.
  */
-public interface InterventionService {
+public interface ActivityService {
 	 
  	/**
  	 * Gets the all interventions.

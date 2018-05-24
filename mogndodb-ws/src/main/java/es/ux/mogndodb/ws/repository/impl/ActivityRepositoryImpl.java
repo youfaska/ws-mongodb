@@ -10,17 +10,17 @@ import com.mongodb.DBObject;
 import com.mongodb.WriteResult;
 
 import es.ux.mogndodb.ws.config.ConexionDb;
-import es.ux.mogndodb.ws.repository.InterventionRepository;
+import es.ux.mogndodb.ws.repository.ActivityRepository;
 import es.ux.mongodb.ws.common.Constant;
 
 /**
  * The Class InterventionRepositoryImpl.
  */
 @Repository
-public class InterventionRepositoryImpl implements InterventionRepository{
+public class ActivityRepositoryImpl implements ActivityRepository{
 	
 	/** The Constant logger. */
-	static final Logger logger = Logger.getLogger(InterventionRepositoryImpl.class);
+	static final Logger logger = Logger.getLogger(ActivityRepositoryImpl.class);
 
 	/** The conexion bd. */
 	@Autowired
