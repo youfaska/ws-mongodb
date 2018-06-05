@@ -1,5 +1,6 @@
 package es.ux.mogndodb.ws.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
 import com.mongodb.util.JSON;
 
@@ -42,16 +44,17 @@ public class ActivityController {
 
 	@RequestMapping(value = "/search", method = RequestMethod.POST) 
 	public List<Activity>  search(@Valid @RequestBody String actividad) {
-		logger.info("BEGIN - search: ");
+		logger.info("BEGIN - search: "); 
+		List<Activity> results = new ArrayList<Activity>();
 		try {
-			DBObject dbObject = (DBObject) JSON.parse(actividad);
-			//mongoDBServie.searchDocument(dbObject);
+			BasicDBObject basicDBObject = (BasicDBObject) JSON.parse(actividad);
+			results = mongoDBServie.searchActivities(basicDBObject);
 		} catch (Exception exception) {
 			logger.error(exception);
 		}
 
 		logger.info("END - search. ");
-		return null;
+		return results;
 	}
 	
 	

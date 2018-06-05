@@ -2,6 +2,7 @@ package es.ux.mogndodb.ws.service;
 
 import java.util.List;
 
+import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
 
 import es.ux.mogndodb.ws.model.Activity;
@@ -23,4 +24,11 @@ public interface ActivityService {
  	 * @param dbObject
  	 */
  	void insertObject(DBObject dbObject );
+ 	/**
+ 	 * searchActivities.
+ 	 * @param basicDBObject
+ 	 * @return
+ 	 */
+	 List<Activity> searchActivities(BasicDBObject basicDBObject) ;
+
 }
