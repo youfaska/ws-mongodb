@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.mongodb.DBObject;
 import com.mongodb.util.JSON;
 
-import es.ux.mogndodb.ws.model.Actividad;
+import es.ux.mogndodb.ws.model.Activity;
 import es.ux.mogndodb.ws.service.ActivityService;
 
 /**
@@ -36,16 +36,16 @@ public class ActivityController {
 	 */
 	@RequestMapping("/activities/")
 	@ResponseBody
-	List<Actividad> getAllInterventions() {
+	List<Activity> getAllInterventions() {
 		return mongoDBServie.getAllActivities();
 	}
 
-	@RequestMapping(value = "/search", method = RequestMethod.POST)
-	public List<Actividad>  search(@Valid @RequestBody String actividad) {
+	@RequestMapping(value = "/search", method = RequestMethod.POST) 
+	public List<Activity>  search(@Valid @RequestBody String actividad) {
 		logger.info("BEGIN - search: ");
 		try {
 			DBObject dbObject = (DBObject) JSON.parse(actividad);
-			mongoDBServie.insertObject(dbObject);
+			//mongoDBServie.searchDocument(dbObject);
 		} catch (Exception exception) {
 			logger.error(exception);
 		}

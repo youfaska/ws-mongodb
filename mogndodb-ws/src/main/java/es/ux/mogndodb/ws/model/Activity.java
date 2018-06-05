@@ -3,7 +3,7 @@ package es.ux.mogndodb.ws.model;
 /**
  * The Class Actividad	.
  */
-public class Actividad {
+public class Activity {
 
 	
 	private String aplicacion;
@@ -24,7 +24,7 @@ public class Actividad {
 
 
 	
-	public Actividad(String aplicacion, String tiempo, String fecha, String error ,String camino, String nombreActividad ) {
+	public Activity(String aplicacion, String tiempo, String fecha, String error ,String camino, String nombreActividad ) {
 		super();
 		this.aplicacion = aplicacion;
 		this.tiempo = tiempo;

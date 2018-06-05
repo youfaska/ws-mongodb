@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.mongodb.DBObject;
 
-import es.ux.mogndodb.ws.model.Actividad;
+import es.ux.mogndodb.ws.model.Activity;
 
 /**
  * The Interface InterventionService.
@@ -16,7 +16,7 @@ public interface ActivityService {
  	 *
  	 * @return the all interventions
  	 */
- 	List<Actividad>  getAllActivities ();
+ 	List<Activity>  getAllActivities ();
 
  	/**
  	 * Add new element.

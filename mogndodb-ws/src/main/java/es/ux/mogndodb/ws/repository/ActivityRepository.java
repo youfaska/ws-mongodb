@@ -1,5 +1,6 @@
 package es.ux.mogndodb.ws.repository;
 
+import com.mongodb.BasicDBObject;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 
@@ -17,5 +18,15 @@ public interface ActivityRepository {
 	 */
 	DBCursor findAllInterventions();
 	
+	/**
+	 * insertObject
+	 * @param dbObject
+	 */
 	void insertObject(DBObject dbObject );
+	/**
+	 * searchActivities
+	 * @param basicDBObject
+	 * @return
+	 */
+	DBCursor searchActivities(BasicDBObject basicDBObject);
 }

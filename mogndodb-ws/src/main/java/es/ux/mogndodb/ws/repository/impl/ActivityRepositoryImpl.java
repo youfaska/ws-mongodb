@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.mongodb.BasicDBObject;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
@@ -64,4 +65,25 @@ public class ActivityRepositoryImpl implements ActivityRepository{
 	}
 
 	
+	public DBCursor searchActivities(BasicDBObject basicDBObject) {
+		logger.info("BEGIN - findAllInterventions: ");
+		DBCursor elementsList = null;
+		try {
+			DBCollection dbCollection  = conexionBd.getMongoDbCollection(Constant.COLLECTION_INTERVENTION);
+			elementsList = dbCollection.find(basicDBObject);
+			if (elementsList!=null){
+				logger.info("Total elemente retrieved: "+elementsList.size());
+				logger.debug(elementsList);
+			}else{
+				logger.error("An error has occured during intervention retrieving process...");
+			}
+		}catch (Exception exception){
+			logger.error(exception);
+		}
+		logger.info("END - findAllInterventions. ");
+		return elementsList;
+	}
+	
+	
+
 }
