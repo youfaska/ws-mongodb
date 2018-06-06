@@ -8,14 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.mongodb.BasicDBObject;
-import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 
 import es.ux.mogndodb.ws.model.Activity;
 import es.ux.mogndodb.ws.repository.ActivityRepository;
 import es.ux.mogndodb.ws.service.ActivityService;
-import es.ux.mongodb.ws.common.Constant;
 
 /**
  * The Class InterventionServiceImpl.
@@ -28,7 +26,7 @@ public class ActivityServiceImpl implements ActivityService {
 	private ActivityRepository mongodDBRepository;
 
 	public List<Activity> getAllActivities() {
-		logger.info("BEGIN - getAllInterventions:");
+		logger.info("BEGIN - getAllActivities:");
 		DBCursor inteventionList = null;
 		DBObject interventionMongodb = null;
 		List<Activity> interventionRResultList = new ArrayList<Activity>();
@@ -42,12 +40,12 @@ public class ActivityServiceImpl implements ActivityService {
 						(String) interventionMongodb.get("nombreActividad"));
 				interventionRResultList.add(intervention);
 			}
-			logger.info("conversion from DBObjet to Intervention  process complete.");
+			logger.info("conversion from DBObjet to activity process complete.");
 			logger.debug(interventionRResultList);
 		} catch (Exception exception) {
 			logger.error(exception);
 		}
-		logger.info("END - getAllInterventions.");
+		logger.info("END - getAllActivities.");
 		return interventionRResultList;
 	}
 
@@ -64,9 +62,9 @@ public class ActivityServiceImpl implements ActivityService {
 	public List<Activity> searchActivities(BasicDBObject basicDBObject) {
 		logger.info("BEGIN - searchActivities: ");
 		List<Activity> results = new ArrayList<Activity>();
-		DBObject activityMongodb = null;
+		DBObject activityMongodb = null;BasicDBObject basicDBObject2 = new BasicDBObject();
 		try {
-			basicDBObject.put("tiempo", "5");
+			//basicDBObject2.put("tiempo", "5");
 			DBCursor elementsList = mongodDBRepository.searchActivities(basicDBObject);
 			while (elementsList.hasNext()) {
 				activityMongodb = elementsList.next();
