@@ -50,7 +50,7 @@ public class ActivityController {
 		try {
 			BasicDBObject basicDBObject = (BasicDBObject) JSON.parse(actividad);
 			results = mongoDBServie.searchActivities(basicDBObject);
-		} catch (Exception exception) {
+		} catch (Exception exception) { 
 			logger.error(exception);
 		}
 
