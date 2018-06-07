@@ -19,6 +19,7 @@ import com.mongodb.util.JSON;
 
 import es.ux.mogndodb.ws.model.Activity;
 import es.ux.mogndodb.ws.service.ActivityService;
+import es.ux.mongodb.ws.common.Constant;
 
 /**
  * The Class InterventionController.
@@ -69,7 +70,7 @@ public class ActivityController {
 		}
 
 		logger.info("END - create. ");
-		return "TODO OK";
+		return Constant.ACTIVITY_RECORDED;
 	}
 
 
