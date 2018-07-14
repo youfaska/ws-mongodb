@@ -36,11 +36,11 @@
 
 ## Instalación
 ### MongoDB
-*Lo primero que hay que hacer es descargar el paquete de mongodb community
-*Luego descomprimirlo.
-*Es importante crear el repertorio: C:\data\db
+* Lo primero que hay que hacer es descargar el paquete de mongodb community
+* Luego descomprimirlo.
+* Es importante crear el repertorio: C:\data\db
 
 ### Lanzar MongoDB
-*Abre la línea de comandos
-*Accede al repertorio bin mongodb que hemos descargado previamente, por ejemplo: C:\Program Files\MongoDB\Server\3.6\bin
-*Ejecute el comando: mongod
+* Abre la línea de comandos
+* Accede al repertorio bin mongodb que hemos descargado previamente, por ejemplo: C:\Program Files\MongoDB\Server\3.6\bin
+* Ejecute el comando: mongod
