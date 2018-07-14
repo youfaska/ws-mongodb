@@ -2,7 +2,7 @@ package es.ux.mogndodb.ws.model;
 
 /**
  * The Class Actividad. 
- * Copyright (C) 2018 Youssef Oufaska
+ * Copyright (C) 2018 Youssef Oufaska - Universidad Intenacional de la Rioja
  * 
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License as published by the Free

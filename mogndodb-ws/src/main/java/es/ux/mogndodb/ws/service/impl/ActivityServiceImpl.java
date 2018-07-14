@@ -16,8 +16,8 @@ import es.ux.mogndodb.ws.repository.ActivityRepository;
 import es.ux.mogndodb.ws.service.ActivityService;
 
 /**
- * The Class InterventionServiceImpl. Copyright (C) 2018 Youssef Oufaska -
- * Universidad Internacional de la Rioja
+ * The Class InterventionServiceImpl. 
+ * Copyright (C) 2018 Youssef Oufaska - Universidad Internacional de la Rioja
  * 
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License as published by the Free

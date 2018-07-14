@@ -8,8 +8,8 @@ import com.mongodb.DBObject;
 import es.ux.mogndodb.ws.model.Activity;
 
 /**
- * The Interface InterventionService. Copyright (C) 2018 Youssef Oufaska -
- * Universidad Internacional de la Rioja
+ * The Interface InterventionService. 
+ * Copyright (C) 2018 Youssef Oufaska - Universidad Internacional de la Rioja
  * 
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License as published by the Free

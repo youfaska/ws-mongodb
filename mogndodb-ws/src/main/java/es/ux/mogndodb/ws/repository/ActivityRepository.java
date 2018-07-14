@@ -5,7 +5,8 @@ import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 
 /**
- * The Interface InterventionRepository. Copyright (C) 2018 Youssef Oufaska
+ * The Interface InterventionRepository. 
+ * Copyright (C) 2018 Youssef Oufaska - Universidad Intenacional de la Rioja
  * 
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License as published by the Free
