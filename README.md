@@ -16,24 +16,24 @@
  */
 # ws-mongodb
 ## Pre-requisitos
--Windows 10 (las pruebas se han hecho con este sistema operativo, pero se puede usar cualquier otro sin problema)
--java 8 [11]
--Spring boot [9]
--RESTFul [10]
--JSON [12]
--Git instalado
--apache Maven 3.5.3
--MongoDB 3.6
--Cliente mongodb, Compass (no es necesario, pero lo puede usar para trabajar con los datos).
--Postman
+*Windows 10 (las pruebas se han hecho con este sistema operativo, pero se puede usar cualquier otro sin problema)
+*java 8 [11]
+*Spring boot [9]
+*RESTFul [10]
+*JSON [12]
+*Git instalado
+*apache Maven 3.5.3
+*MongoDB 3.6
+*Cliente mongodb, Compass (no es necesario, pero lo puede usar para trabajar con los datos).
+*Postman
 
 ## Instalación
 ### MongoDB
--Lo primero que hay que hacer es descargar el paquete de mongodb community
--Luego descomprimirlo.
--Es importante crear el repertorio: C:\data\db
+*Lo primero que hay que hacer es descargar el paquete de mongodb community
+*Luego descomprimirlo.
+*Es importante crear el repertorio: C:\data\db
 
 ### Lanzar MongoDB
--Abre la línea de comandos
--Accede al repertorio bin mongodb que hemos descargado previamente, por ejemplo: C:\Program Files\MongoDB\Server\3.6\bin
--Ejecute el comando: mongod
+*Abre la línea de comandos
+*Accede al repertorio bin mongodb que hemos descargado previamente, por ejemplo: C:\Program Files\MongoDB\Server\3.6\bin
+*Ejecute el comando: mongod
