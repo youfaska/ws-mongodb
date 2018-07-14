@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * The Class SampleSimpleApplication.
+ * The Class WebServiceMongoDbApplication.
  * Copyright (C) 2018 Youssef Oufaska - Universidad Intenacional de la Rioja
  * 
  * This program is free software: you can redistribute it and/or modify it under
