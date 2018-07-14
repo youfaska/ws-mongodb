@@ -21,5 +21,7 @@ public class Constant {
 	public static final String ASSET_FLEET_MONGO_DB = "asset_fleet";
 	public static final String COLLECTION_INTERVENTION = "intervention";
 	public static final String ACTIVITY_RECORDED = "Actividad registrada correctamente";
+	public static final String ERROR_RECORDING_ACTIVITY = "Un error ha ocurrido durante el regitrso de la actividad";
+
 
 }

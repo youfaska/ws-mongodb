@@ -78,11 +78,11 @@ public class ActivityController {
 		try {
 			DBObject dbObject = (DBObject) JSON.parse(actividad);
 			mongoDBServie.insertObject(dbObject);
+			logger.info("END - create. ");
 		} catch (Exception exception) {
 			logger.error(exception);
+			return Constant.ERROR_RECORDING_ACTIVITY;
 		}
-
-		logger.info("END - create. ");
 		return Constant.ACTIVITY_RECORDED;
 	}
 
