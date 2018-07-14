@@ -16,16 +16,23 @@
  */
 # ws-mongodb
 ## Pre-requisitos
-*Windows 10 (las pruebas se han hecho con este sistema operativo, pero se puede usar cualquier otro sin problema)
-*java 8 [11]
-*Spring boot [9]
-*RESTFul [10]
-*JSON [12]
-*Git instalado
-*apache Maven 3.5.3
-*MongoDB 3.6
-*Cliente mongodb, Compass (no es necesario, pero lo puede usar para trabajar con los datos).
-*Postman
+1. Windows 10 (las pruebas se han hecho con este sistema operativo, pero se puede usar cualquier otro sin problema)
+
+2. java 8 [11]
+
+3. Spring boot [9]
+
+4. RESTFul [10]
+
+5. JSON [12]
+
+6. Git instalado
+
+7. apache Maven 3.5.3
+
+8. MongoDB 3.6
+9. Cliente mongodb, Compass (no es necesario, pero lo puede usar para trabajar con los datos).
+10. Postman
 
 ## Instalación
 ### MongoDB
