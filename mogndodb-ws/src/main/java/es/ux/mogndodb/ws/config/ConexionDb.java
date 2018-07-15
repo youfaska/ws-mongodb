@@ -13,7 +13,7 @@ import es.ux.mongodb.ws.common.Constant;
 /**
  * The Class Connexion. 
  * Copyright (C) 2018 Youssef Oufaska - Universidad Intenacional de la Rioja
- * 
+ * Trabajo Fin de Grado en Ingeniría Informática.
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License as published by the Free
  * Software Foundation, either version 3 of the License, or (at your option) any
