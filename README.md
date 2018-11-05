@@ -1,20 +1,13 @@
-/*
-* Copyright (C) 2018 Youssef Oufaska - Universidad Internacional de la Rioja
- * 
- * This program is free software: you can redistribute it and/or modify it under
- * the terms of the GNU Affero General Public License as published by the Free
- * Software Foundation, either version 3 of the License, or (at your option) any
- * later version.
- * 
- * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
- * details.
- * 
- * You should have received a copy of the GNU Affero General Public License
- * along with this program. If not, see <https://www.gnu.org/licenses/>.
- */
+
 # ws-mongodb
+El objetivo del proyecto es permitir el desarrollo de una aplicación que ayude a buscar
+los puntos de mejora de los productos que usan los usuarios. Hoy en día las
+aplicaciones web, móviles, en local y en la nube tienen mucha presencia en el día a
+día de las personas. 
+Este trabajo, se basa en recopilar las actividades u operaciones de los usuarios en
+una aplicación vía una API, y registrar estos datos en una base de datos para su
+posterior análisis dirigida a la mejora continua del producto basada en la experiencia
+del usuario. La idea está basada en Learning Record Store (LRS).
 ## Pre-requisitos
 1. Windows 10 (las pruebas se han hecho con este sistema operativo, pero se puede usar cualquier otro sin problema)
 
